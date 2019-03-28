@@ -1,0 +1,69 @@
+*{
+	box-sizing: border-box;
+}
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+
+	background-color: #343D46
+}
+
+body{
+	position: relative;
+
+	height: 100vh;
+	width: 100vw;
+}
+.content{
+	position: relative;
+
+	padding: 30px 20px;
+
+	width: 50%;
+	
+	box-shadow: 4px 4px lightgrey;
+	background-color: snow;
+}
+
+.content p{
+	display: inline-block;
+
+	font-family: monospace;
+	font-size: 24px;
+}
+
+.rotate{
+	position: absolute;
+
+	height: 60px;
+	width: 60px;
+
+	top: 100%;
+	left: 25%;
+
+	background-color: snow;
+	transform: translate(0%, -50%) rotate(45deg);
+}
+.cursor{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	
+	transition: all 2s 0.15s linear;
+
+	
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+
+	background-color: snow;
+}
+
+.cursor:hover{
+	width: 300px;
+	height: 300px;
+	
+	cursor: pointer;
+}
