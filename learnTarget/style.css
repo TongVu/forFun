@@ -1,0 +1,50 @@
+*{
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+
+	background-color: rgb(66, 82, 107);
+}
+
+a{
+	color: snow;
+	text-decoration: none;
+}
+
+.tab div{
+	display: none;
+
+	background-color: lightgrey;
+}
+
+.tab div:target{
+	display: block;
+}
+
+#link h3, #link2 h3{
+	text-align: center;
+	padding: 15px;
+	font-size: 24px;
+	font-weight: bold;
+	color: snow;
+}
+
+.tab2 div{
+	display: none;
+
+	background-color: coral;
+}
+
+.tab2 div:target, 
+.tab div{	
+	display: none;
+}
+
+.tab2 div:target{
+	display: block;
+}
+
