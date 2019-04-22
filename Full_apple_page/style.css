@@ -1,0 +1,414 @@
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+
+	background-color: lightgrey;
+}
+
+header{
+	display: flex;
+	justify-content: center;
+	margin: 0px;
+	padding: 0px;
+
+	height: 60px;
+	width: 100vw;
+}
+
+.nav{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+	margin: 0px;
+	padding: 0px;
+
+	width: 80%;
+	height: 100%;
+
+	list-style-type: none;
+}
+
+.nav li{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+
+	margin-left: 5px;
+}
+
+.nav li a{	
+	font-size: 18px;
+	color: black;
+	text-decoration: none;	
+}
+/*****************************/
+
+main{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+main div{
+	width: 100%;
+	
+	margin-bottom: 10px;
+}
+
+/****************iPHONE 8*********************/
+.ip8{
+	background-color: #F9F0EB;
+}
+
+.ip8 h1, p{
+	text-align: center;
+}
+
+.ip8 h1{
+	margin: 0px;
+	margin-top: 36px;
+	padding: 0px;
+}
+
+.ip8 p{
+	color: black;
+	margin: 0px;
+}
+
+.ip8__img{
+	margin: 0px;
+	padding: 30px 0px 0px 0px;
+
+	text-align: center;
+	width: 100%;
+
+	background-color: #F9F0EB;
+}
+
+.ip8__img img{
+	width: 50%;
+}
+
+/****************iPHONE X*********************/
+
+.ipX{
+	background-color: #FAFAFA;
+}
+
+.ipX h1, p{
+	text-align: center;
+}
+
+.ipX h1{
+	margin: 0px;
+	margin-top: 36px;
+	padding: 0px;
+}
+
+.ipX p{
+	color: black;
+	margin: 0px;
+}
+
+.ipX__img{
+	margin: 0px;
+	padding: 172px 0px;
+
+	text-align: center;
+	width: 100%;
+
+	background-color: #FAFAFA;
+}
+
+.ipX__img img{
+	width: 60%;
+}
+
+/****************iWatch*********************/
+
+.iwatch, 
+.img--small,
+.img--large{
+	background-color: #FAFAFA;
+}
+
+.img--small{
+	width: 100%;
+	margin-top: 36px;
+
+	text-align: center;
+}
+
+.img--small img{	width: 15%;	}
+.img--small p {	
+	font-size: 24px;	
+	padding-left: 20px;
+}
+.img--large{
+	width: 100%;
+
+	text-align: center;
+}
+.img--large img{
+	width: 70%;
+}
+
+/****************Grid Layout*********************/
+
+.container{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 5px;
+}
+
+.container div{
+	height: 100%;
+	width: 100%;
+	
+	background-color: #FAFAFA;
+}
+
+.container div img{
+	width: 100%;
+}
+
+/****************TV 4K*********************/
+
+.container .tv{
+	margin: 0px;
+	padding: 0px;
+
+	text-align: center;
+	background-color: #000308;
+}
+
+.tv h3, p{
+	margin: 10px;
+	color: snow;
+}
+
+.tv h3{
+	font-weight: bold;
+	font-size: 36px;
+	margin-top: 36px;
+}
+
+.tv .img--apple{
+	width: 15%; 
+	vertical-align: bottom; 
+	margin-left: -20px;
+	margin-right: -20px;
+	margin-bottom: -25px;
+}
+
+.tv p{
+	color: snow;
+	font-size: 20px;
+}
+
+/****************iOS 11*********************/
+
+.ios h1, p{
+	color: black;
+	text-align: center;
+}
+
+.ios h1{
+	margin-top: 60px;
+	margin-bottom: 15px;
+	padding-bottom: 0px;
+}
+.ios p{
+	margin: 0px;
+	padding: 0px;
+	font-size: 24px;
+	margin-bottom: 60px;
+}
+.ios img{
+	padding-left: 60px;
+	margin-bottom: 0px;
+}
+
+.container .ios h1, p{
+	color: black;
+	text-align: center;
+}
+
+/****************watchOS 4*********************/
+
+.watchos h1, p{
+	color: black;
+	text-align: center;
+}
+
+.watchos h1{
+	margin-top: 60px;
+	margin-bottom: 15px;
+	padding-bottom: 0px;
+}
+.watchos p{
+	margin: 0px;
+	padding: 0px;
+	font-size: 24px;
+	margin-bottom: 60px;
+}
+.watchos img{
+	padding-left: 60px;
+	margin-bottom: 0px;
+}
+
+/****************macOS *********************/
+
+.macos h1, p{
+	color: black;
+	text-align: center;
+}
+
+.macos h1{
+	margin-top: 60px;
+	margin-bottom: 15px;
+	padding-bottom: 0px;
+}
+.macos p{
+	margin: 0px;
+	padding: 0px;
+	font-size: 24px;
+	margin-bottom: 50px;
+}
+.macos img{
+	padding-left: 60px;
+	margin-bottom: 0px;
+}
+
+
+/*******************************/
+footer{
+	margin: auto;
+	padding: 60px 30px 30px 30px;
+	width: 90%;
+	background-color: lightgrey;
+	border-radius: 10px;
+}
+
+.menu{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+	grid-gap: 2px;
+}
+
+.menu div{
+	width: 100%;
+}
+
+footer p{
+	margin: 0px;
+	padding: 30px 0px 0px 0px;
+
+	color: grey;
+	text-align: left;
+}
+
+footer p a{
+	color: steelblue;
+	text-decoration: none;
+}
+footer span{
+	margin: 0px;
+	padding: 15px 0px;
+
+	color: grey;
+	text-align: left;	
+}
+
+
+footer ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+footer ul li{
+	margin-left: 15px;
+	padding-right: 15px;
+	display: inline-block;
+	border-right: 1px solid grey;
+}
+
+.menu span{
+	color: black;
+	font-weight: bold;
+}
+
+.menu ul li{
+	margin: 0px;
+	padding: 5px 0px;
+
+	display: block;
+
+	border: none;
+	color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
