@@ -1,0 +1,140 @@
+*{
+	box-sizing: border-box;
+}
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+
+	background-color: rgb(66, 82, 107);
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+}
+
+/********Center Menu********/
+.middle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+/**************************/
+
+.menu{
+	width: 350px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+li{
+	list-style-type: none;
+}
+/**************Button & Button Effect**************/
+.btn,
+.btn__logout{
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 0px;
+	padding: 15px;
+	
+	text-decoration: none;
+	list-style-type: none;
+	color: black;
+
+	background-color: #FD7272;
+}
+
+.btn:before{
+	display: none;
+	content:"";
+	position: absolute;
+	left: 20px;
+	bottom: -7px;
+
+	height: 15px;
+	width: 15px;
+
+	transform: rotate(45deg);
+	background-color: #FD7272;
+}
+
+.btn:hover:before{
+	display: inline-block;
+}
+/**************************/
+
+.smenu{
+	display: block;
+	background-color: snow;
+
+	max-height: 0em;
+	transition: max-height 0.3s;
+	overflow: hidden; 
+	/*ko có overflow bị lỗi*/
+}
+
+.sitem{
+	display: block;
+	position: relative;
+	padding: 15px;
+
+	color: black;
+	text-decoration: none;
+	list-style-type: none;
+
+	transition: background-color 0.3s;
+}
+
+.sitem:before{
+	content: "";
+	display: none;
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+
+	height: 90%;
+	width: 5px;
+
+	transform: translate(0%, -50%);
+	background-color: lightblue;
+}
+
+.sitem:hover{
+	background-color: #F8EFBA;
+}
+.sitem:hover:before{
+	display: block;
+}
+
+.item:target .smenu{
+	max-height: 10em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
