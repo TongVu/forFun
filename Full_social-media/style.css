@@ -1,0 +1,418 @@
+*{
+	box-sizing: border-box;
+}
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+
+	background-color: rgb(66, 82, 107);
+}
+
+body{
+	width: 100vw;
+}
+/*********************************** HEADER ************************************/
+
+header{
+	position: relative;
+
+	margin: 0px;
+	padding: 0px;
+	
+	width: 100%;
+
+	display: flex;
+	flex-flow: column wrap;
+
+	align-content: flex-end;
+	border-radius: 7px;
+	background-color: rgb(66, 82, 107);
+}
+
+.item{
+	display: inline-block;
+	margin: 15px 10px;
+	margin-bottom: 0px;
+}
+
+.item:nth-child(1){	
+	margin: 0px;
+	padding: 15px 10px;
+	height: 100%;
+	background-color: #3c6382 ;	}
+
+header a{	color: snow;	}
+
+.avt{
+	position: absolute;
+	bottom: 7px;
+	right: 15px;
+	
+	height: 40px;
+	width: 40px;
+}
+
+.header__avt{
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+}
+
+/*************************************** BODY ********************************/
+
+.wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: flex-start;
+
+	width: 100vw;
+
+	margin: 0px;
+	padding: 15px;
+
+	background-color: #f1f2f6;
+}
+
+
+/* LEFT **********************************************************************/
+
+.left{
+	width: 25%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.left__profile{
+	background-color: snow;
+	box-shadow: 5px 5px 5px lightgrey;
+}
+
+.left__profile h3{
+	margin: 0px;
+	padding: 10px;
+	text-align: center;
+}
+
+.left__profile  .profile__pic{
+	width: 100%;
+	height: auto;
+
+	text-align: center;
+}
+
+.profile__pic img{
+	width: 120px;
+	height: 120px;
+
+	border-radius: 100%;
+}
+
+.left__profile hr{
+	width: 90%;
+	margin: 15px auto;
+	border: 1px solid lightgrey;
+}
+
+.left__profile ul{
+	margin: 0px;
+	padding: 0px 15px;
+	list-style-type: none;
+}
+
+.fas{
+	padding-bottom: 20px;
+}
+
+.left__profile span{
+	margin: 0px 20px;
+}
+
+/***********************************************************************/
+
+.left__info{
+	margin-top: 15px;
+	padding-top: 15px;
+
+	background-color: #60a3bc;
+	box-shadow: 5px 5px 5px lightgrey;
+}
+
+.left__info ul{
+	margin: 0px;
+	padding: 0px 15px;
+	list-style-type: none;
+}
+
+.left__info span{
+	margin: 0px 20px;
+}
+
+/***********************************************************************/
+
+.left__interests{
+	margin-top: 15px;
+	padding: 10px 15px;
+
+	background-color: snow;
+	box-shadow: 5px 5px 5px lightgrey;
+}
+
+.left__interests p{
+	margin: 0px;
+	padding-top: 5px;
+}
+
+.left__interests span{
+	margin: 0px 1px;
+	padding: 0px 5px;
+	color: snow;
+}
+
+/***********************************************************************/
+
+.left__hey{
+	position: relative;
+	margin-top: 15px;
+	padding: 15px;
+
+	background-color: lightgrey;
+	border-radius: 10px
+}
+
+.left__hey div{
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	padding: 10px 30px;
+	
+	font-weight: bolder;
+	color: red;
+	border-top-right-radius: 10px;
+	background-color: #3c6382;
+}
+
+
+/* MIDDLE **********************************************************************/
+
+.middle{
+	margin: 0px 10px;
+	padding: 0px;
+
+	width: 700px;
+}
+
+/***********************************************************************/
+
+.middle__post{
+	margin: 0px;
+	padding: 10px 15px;
+	
+	box-shadow: 5px 5px 5px lightgrey;
+	border-radius: 5px;
+	background-color: snow;
+}
+
+.middle__post p {
+	color: grey;
+}
+.status{
+	margin: 10px 0px;
+	padding: 10px;
+	font-size: 15px;
+	border: 1px solid lightgrey;
+}
+
+.btn--post{
+	padding: 5px;
+	padding-left: 15px;
+	width: 90px;
+	color: snow;
+	background-color: #3c6382;
+}
+
+.btn--post i{
+	padding: 0px;
+}
+
+/***********************************************************************/
+
+.middle__john,
+.middle__jane,
+.middle__angie{
+	position: relative;
+
+	margin: 15px 0px;
+	padding: 10px 15px;
+	
+	box-shadow: 5px 5px 5px lightgrey;
+	border-radius: 5px;
+	background-color: snow;
+}
+
+.middle__john--avt img,
+.middle__jane--avt img,
+.middle__angie--avt img{
+	height: 60px;
+	width: 60px;
+	border-radius: 100%;
+}
+
+.user-name{ 
+	display: inline-block; 
+	font-size: 18px;
+}
+
+.minute{
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	color: grey;
+}
+
+.hr__line{
+	margin: 20px 0px;
+}
+
+.user-img{
+	width: 49%;
+	height: auto;
+}
+
+.btn{ 
+	display: inline-block; 
+	padding: 10px;
+	margin-top: 15px;
+	background-color: steelblue;
+}
+
+.btn i{
+	color: snow;
+}
+
+.middle__angie .user-img{
+	width: 100%;
+	height: auto;
+}
+
+/* RIGHT
+**********************************************************************/
+.right{
+	margin: 0px;
+	padding: 0px;
+
+	width: 300px;
+}
+.events,
+.request{
+	margin-bottom: 15px;
+	padding: 15px 10px;
+	text-align: center;
+	box-shadow: 5px 5px 5px lightgrey;
+	border-radius: 5px;
+	background-color: snow;
+}
+
+.events p{
+	margin: 0px;
+	padding-bottom: 15px;
+}
+
+.right__img--events{
+	width: 100%;
+	margin: 0px auto;
+	margin-bottom: 15px;
+}
+
+.btn--info{
+	margin: 0px;
+	padding: 5px 0px;
+
+	width: 100%;
+
+	color: black;
+	background-color: lightgrey;
+}
+
+/***********************************************************************/
+
+.request p,
+.request span{
+	font-size: 18px;
+	margin-top: 0px;
+}
+.request img{
+	display: block;
+	margin: 0px auto;
+	width: 90px;
+	height: auto;
+}
+
+.request div{
+	padding: 0px;
+	display: flex;
+
+	width: 100%;
+}
+.request div i{
+	margin: 0px;
+	margin-top: 15px;
+	font-size: 18px;
+	text-align: center;
+	padding: 10px 0px;
+
+	width: 50%;
+	height: 100%;
+}
+.fa-check{
+	background-color: lightgreen;
+}
+
+.fa-window-close{
+	background-color: lightcoral;
+}
+
+/***********************************************************************/
+
+.ads{
+	margin-bottom: 15px;
+	padding: 20px 0px;
+	font-size: 18px;
+	text-align: center;
+
+	box-shadow: 5px 5px 5px lightgrey;
+	border-radius: 5px;
+	background-color: snow;
+}
+
+.bug{
+	padding: 35px 0px;
+	text-align: center;
+	box-shadow: 5px 5px 5px lightgrey;
+	border-radius: 5px;
+	background-color: snow;
+}
+
+.bug i{
+	padding: 0px;
+	font-size: 36px;
+}
+
+/***********************************************************************/
+
+/**************************************** FOOTER *******************************/
+
+footer{
+	width: 100%;
+	height: 50px;
+
+	padding: 15px 25px;
+	color: snow;
+	
+	border-radius: 7px;
+	background-color: rgb(66, 82, 107);
+}
+
+/***********************************************************************/
