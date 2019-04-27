@@ -1,0 +1,63 @@
+*{
+	box-sizing: border-box;
+}
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+
+	background-color: rgb(66, 82, 107);
+}
+
+.wrapper{
+	margin: 0px;
+	padding: 0px;
+}
+
+.circle{
+	position: absolute;
+	top: 20px;
+	left: 45px;
+
+	width: 20px;
+	height: 20px;
+
+	border-radius: 100%;
+	background-color: lightgreen;
+}
+
+.right{
+	position: absolute;
+	top: 15px;
+	left: 55px;
+	z-index: 1;
+
+	height: 80px;
+	width: 40px;
+
+	border-radius: 100%;
+	border: 3px solid rgb(66, 82, 107);
+	background-color: lightgreen;
+
+	transform: rotate(30deg);
+}
+
+.left{
+	position: absolute;
+	top: 36px;
+	left: 28px;
+
+	height: 60px;
+	width: 40px;
+
+	border-radius: 100%;
+	background-color: lightgreen;
+
+	transform: rotate(-45deg);
+}
+
+.circle:hover,
+.right:hover,
+.left:hover{	
+	background-color: snow;
+}
