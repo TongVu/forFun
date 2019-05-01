@@ -101,12 +101,12 @@ footer h2{
 		grid-row: 1/4;
 	}
 
-	.about{
+	.content{
 		grid-column: 4 / 10;
 		grid-row: 1 / -1;
 	}
 
-	.content{
+	.about{
 		grid-column: 10 / 13;
 		grid-row: 1 / 5;
 	}
