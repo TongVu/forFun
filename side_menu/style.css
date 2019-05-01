@@ -1,0 +1,56 @@
+
+*{
+	box-sizing: border-box;
+}
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+
+	background-color: rgb(66, 82, 107);
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+}
+
+.btn{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	padding-top: 1px;
+	width: 40px;
+	height: 40px;
+	
+	text-align: center;
+	border-radius: 10px;
+	background-color: grey;
+}
+
+.bar1, .bar2, .bar3 {
+	margin: 6px auto;
+  	padding: 0px;
+
+  	width: 35px;
+  	height: 5px;
+
+  	background-color: snow;
+}
+
+.side{
+	margin-left: -15px;
+	max-width: 0vw;
+	height: 100vh;
+
+	background-color: snow;
+	box-shadow: 5px 5px 10px 5px lightgrey;
+
+	-webkit-transition: max-width 0.3s;
+	transition: max-width 0.3s;
+}
+
+.btn:hover + .side{
+	max-width: 40vw;
+}
