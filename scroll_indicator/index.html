@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<title>Scroll indicator</title>
+	</head>
+
+	<body>			
+		<script>
+			// onscroll giống như 1 event còn window là sự kiện - Đây là W3Schools code:
+			/*
+			window.onscroll = function(){
+				scrollFunc();
+			};
+
+			function scrollFunc(){
+				var winscroll = document.body.scrollTop;
+				var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+				var scrolled = (winscroll / height) * 100;
+				document.getElementById('mybar').style.width = scrolled + "%";
+			}
+			*/
+
+			//Đây là tui code:
+			window.onscroll = function(){
+				var winscroll = document.body.scrollTop;
+				var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+				var scrolled = (winscroll / height) * 100;
+				
+				document.getElementById('mybar').style.width = scrolled+'%';
+			}
+
+
+		</script>
+
+		<header>
+
+			<h2 id="title">Scroll Indicator</h2>
+			<div class="progress-container">
+				<div class="progress-bar" id="mybar"></div>
+			</div>
+
+		</header>
+		
+			
+
+	</body>
+</html>
