@@ -25,6 +25,10 @@
 			*/
 
 			//Đây là tui code:
+			//scrollHeight: độ cao của page
+			//clientHeight: height viewport của user
+			//scrollTop: độ cao tính từ top của clientHeight tới top page
+			
 			window.onscroll = function(){
 				var winscroll = document.body.scrollTop;
 				var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
