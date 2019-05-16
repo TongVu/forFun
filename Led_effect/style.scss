@@ -1,0 +1,56 @@
+body{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+
+    height: 100%;
+    width: 100%;
+    background-color: rgb(93, 109, 126);
+
+    .led{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 450px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .core{
+        position: relative;
+        width: 80px;
+        height: 80px;
+
+        border-radius: 100%;
+        // ANIMATION
+        // animation-name; @keyframes name { difinition };
+        // animation-duration: like transition
+        // animation-timing-fuction:
+        // animation-delay:
+        // animation-iteration-count: lặp 
+        // animation-direction: khi hiệu ứng đi từ 0% -> 100%, direction của nó đi từ 100% -> 0% như thế nào
+        // animation-fill-mode: trạng thái khi kết thúc animation, dòng infinite ở iteration thì khỏi quan tâm cái này
+        // animation-play-state: trạng thái hiệu ứng khi chạy trình duyệt. paused || running. Kết hợp với event click tạo đc nút pause, play khi đang chạy hiệu ứng
+        
+        animation: led-effect 0.8s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;        
+
+        box-shadow: 0px 0px 10px 20px snow;
+        background-color: rgb(208, 211, 212);
+    }
+
+    @keyframes led-effect{
+        0%{
+            box-shadow: 0px 0px 10px 20px snow;
+            background-color: rgb(208, 211, 212);
+        }
+
+        100%{
+            box-shadow: 5px 5px 20px 40px snow;
+            background-color: lightcoral;
+        }
+    }
+}
