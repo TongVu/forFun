@@ -1,0 +1,113 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #5a5c69;
+}
+
+body header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-radius: 8px;
+  background-color: snow;
+}
+
+body header h1 {
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+body main {
+  margin: 0px;
+  padding: 30px;
+}
+
+body main .container {
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: beige;
+}
+
+body main .container input[type=text],
+body main .container input[type=email],
+body main .container input[type=password] {
+  display: block;
+  margin: 15px auto;
+  padding: 15px;
+  width: 80vw;
+  font-size: 18px;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+}
+
+body main .container input[type=text]:hover,
+body main .container input[type=email]:hover,
+body main .container input[type=password]:hover {
+  border: 2px solid lightcoral;
+  -webkit-box-shadow: 5px 5px 10px lightgray;
+          box-shadow: 5px 5px 10px lightgray;
+}
+
+body main .container .container__radio {
+  text-align: center;
+  width: 100%;
+}
+
+body main .container .container__radio label {
+  padding: 15px;
+}
+
+body main .container .container__radio input[type=radio] {
+  margin-right: 30px;
+}
+
+body main .container input[type=submit] {
+  display: block;
+  margin: 15px auto;
+  padding: 15px 30px;
+  color: snow;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: steelblue;
+}
+
+body main .container input[type=submit]:hover {
+  -webkit-box-shadow: 5px 5px 10px grey;
+          box-shadow: 5px 5px 10px grey;
+  cursor: pointer;
+}
+
+body main .container input[type=submit]:active {
+  -webkit-transform: translate(0, 3px);
+          transform: translate(0, 3px);
+}
+
+body footer {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: snow;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Review Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Review Form</h1>
+    </header>
+
+
+    <main>
+
+
+        <div class="container">
+
+            <!-- 
+                Form đều sẽ bắt đầu bằng input và có 3 thuộc tính cơ bản:
+                
+                type = text - email - password
+                placeholder = phần chữ gợi ý miêu tả màu xám              
+                value = giá trị thực khi nhập liệu vào form từ bàn phím
+                requied giống tên của nó, sẽ bắt người dùng nhập liệu vào
+            -->
+            <form>
+                <input type="text" placeholder="User's name" name="userName" value="" required />
+
+                <input type="email" placeholder="User's Email" name="userEmail" value="" required />
+
+                <input type="password" placeholder="Password" name="userPass" value="" required />
+
+                <div class="container__radio">
+                    <label for="gender">Gender: </label>
+                    <span>Male</span> <input type="radio" name="gender" value="male">
+                    <span>Female</span> <input type="radio" name="gender" value="female">
+                    <span>Other</span> <input type="radio" name="gender" value="other">
+                </div>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        Tống Vũ <br />
+        Self-taught developer
+    </footer>
+</body>
+
+</html>
