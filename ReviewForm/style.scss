@@ -96,6 +96,15 @@ body{
                 &:active{
                     transform: translate(0, 3px);
                 }
+                
+                 #your-bike{
+                    margin: 15px;
+                    padding-right: 15px;
+                }
+
+                select{
+                    margin: 15px 0;
+                }
             }
 
         }
